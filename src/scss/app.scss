@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700|Noto+Sans:400,700|Roboto:300,400,500,700");
+
+@use "@material/tab-bar/mdc-tab-bar";
+@use "@material/tab-scroller/mdc-tab-scroller";
+@use "@material/tab-indicator/mdc-tab-indicator";
+@use "@material/tab/mdc-tab";
+@use "@material/card";
+
+$mdc-theme-primary: #313d4b;
+$mdc-theme-secondary: #fefefe;
+$mdc-theme-background: #fff;
+$mdc-theme-error: #fc5356;
+
+$mdc-typography-font-family: "Roboto", "Noto Sans", "Noto Sans KR",
+"KhmerOS_sys", sans-serif;
+$mdc-theme-text-primary-on-background: $mdc-theme-background;
+$mdc-theme-text-secondary-on-background:$mdc-theme-background;
+
+.mdc-button {
+  letter-spacing: 0.07em !important;
+}
+.mdc-top-app-bar__section.title {
+  justify-content: center;
+}
+.mdc-top-app-bar__title {
+  padding: 0;
+}
+.mdc-form-field > label {
+  padding-left: 20px;
+}
+.mdc-snackbar,
+.mdc-dialog {
+  z-index: 9999;
+}
+.mdc-top-app-bar--fixed-adjust.add-tab {
+  padding-top: 104px;
+}
+.mdc-drawer__header {
+  min-height: 30px;
+}
+.country-selector__country-flag{
+  top: 24px !important;
+}
+.input-tel__input{
+  height: 50px !important;
+  min-height: 50px !important;
+}
+.country-selector.has-value .country-selector__input{
+  padding-top: 10px !important;;
+}
+.country-selector.input-country-selector.has-value {
+  height: 50px !important;
+}
+.country-selector__input {
+  height: 50px !important;
+  min-height: 50px !important;
+}
+.mdc-tab-scroller__scroll-content button.mdc-tab:focus {
+  outline: none;
+  background-color: transparent !important;
+}
+.mdc-linear-progress__bar-inner {
+  border-color: var($mdc-theme-primary) !important;
+}
